@@ -56,11 +56,14 @@ body {
   .border-radius(0);
   @shadow: none;
   .box-shadow(@shadow);
+  padding-left: 0px;
+  padding-right: 0px;
   border-bottom: 2px solid @orange
 }
 
 .navbar .brand {
-	padding: 12px 20px 8px;
+    font-size: 30px;
+	padding: 5px 20px 1px;
 }
 
 .navbar .nav li > a {
@@ -69,8 +72,7 @@ body {
 }
 
 .navbar .nav .active > a,
-.navbar .nav li > a:hover,
-.navbar .brand:hover {
+.navbar .nav li > a:hover {
 	border-bottom: 3px solid @orange
 }
 
