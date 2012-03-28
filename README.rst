@@ -6,5 +6,5 @@ can work. An easy way to install node is to use the python nodeenv package::
     (nodejs) $ nodeenv nodeenv
     (nodejs) $ deactivate
     $ source nodeenv/bin/activate
-    (nodeenv) $ cd /path/to/Gaelleria
+    (nodeenv) $ cd /path/to/Gaellerie
     (nodeenv) $ ./build.sh
