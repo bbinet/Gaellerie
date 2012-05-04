@@ -1,9 +1,0 @@
-[submodule "less.js"]
-	path = less.js
-	url = https://github.com/cloudhead/less.js.git
-[submodule "resources/bootstrap"]
-	path = resources/bootstrap
-	url = https://github.com/twitter/bootstrap.git
-[submodule "resources/galleria"]
-	path = resources/galleria
-	url = https://github.com/aino/galleria.git
