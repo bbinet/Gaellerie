@@ -1,0 +1,3 @@
+[submodule ".dev/submodules/blatter"]
+	path = .dev/submodules/blatter
+	url = git://github.com/bbinet/blatter.git
