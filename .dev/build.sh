@@ -6,11 +6,5 @@ LESSC=./submodules/less.js/bin/lessc
 ( cd "${BASEDIR}"
     $LESSC --compress ./swatchmaker.less > ../static/css/bootstrap.min.css
 
-    # rsync -avz --cvs-exclude  --delete \
-    #     --exclude="_build" \
-    #     --exclude=".*" \
-    #     --exclude="docs" \
-    #     --exclude="tests" \
-    #     --exclude="less.js" \
-    #     . _build/
+    rsync -avz --cvs-exclude ./static/* ../static
 )
