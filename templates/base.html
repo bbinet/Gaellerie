@@ -41,10 +41,10 @@
             <span class="brand">Gaëllerie</span>
             <div class="nav-collapse">
             <ul class="nav pull-right">
-                {% for href, caption in navbar %}
+                {% for href, caption in navbar -%}
                 <li{% if caption == active_page %} class="active"{% endif
                 %}><a href="{{ href|e }}">{{ caption|e }}</a></li>
-                {% endfor %}
+                {%- endfor %}
             </ul>
             </div><!-- /.nav-collapse -->
         </div>
