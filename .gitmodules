@@ -10,3 +10,6 @@
 [submodule ".dev/submodules/bootstrap"]
 	path = .dev/submodules/bootstrap
 	url = git://github.com/twitter/bootstrap.git
+[submodule ".dev/submodules/UglifyJS"]
+	path = .dev/submodules/UglifyJS
+	url = git://github.com/mishoo/UglifyJS.git
