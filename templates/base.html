@@ -18,8 +18,8 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-    <link href="css/docs.css" rel="stylesheet">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link href="/css/docs.css" rel="stylesheet">
     <style>.galleria{height:540px;}</style>
   </head>
 
@@ -70,12 +70,12 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <!-- <script src="resources/jquery.js"></script> -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
-    <script src="js/galleria.js"></script>
+    <script src="/js/galleria.js"></script>
     <script>
     $("div.galleria").each(function(index) {
         // Load the classic theme only once
         if (index === 0) {
-            Galleria.loadTheme('galleria-themes/classic/galleria.classic.js');
+            Galleria.loadTheme('/galleria-themes/classic/galleria.classic.js');
         }
         // Initialize Galleria
         $('.galleria').galleria({
