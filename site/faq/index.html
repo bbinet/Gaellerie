@@ -1,0 +1,49 @@
+{% extends "/base.html" %}
+{% set active_page = "Présentation" %}
+{% block content %}
+
+<!-- Typography
+================================================== -->
+<section id="typography">
+  <div class="page-header">
+    <h3>Typographie</h3>
+  </div>
+
+  <!-- Headings & Paragraph Copy -->
+  <div class="row">
+	  
+    <div class="span4">
+      <div class="well">
+        <h1>h1. Heading 1</h1>
+        <h2>h2. Heading 2</h2>
+        <h3>h3. Heading 3</h3>
+        <h4>h4. Heading 4</h4>
+        <h5>h5. Heading 5</h5>
+        <h6>h6. Heading 6</h6>
+      </div>
+    </div>
+	  
+    <div class="span4">
+      <h3>Bonjour</h3>
+      <p>Voici ma Gaellerie photo</p>
+    </div>
+	
+    <div class="span4">
+      <h3>Contact</h3>
+      <address>
+        <strong>Hermange, Inc.</strong><br>
+        42 allée de la Tartiflette<br>
+        73470, Novalaise<br>
+        <abbr title="Phone">P:</abbr> 06 17 28 39 40
+      </address>
+      <address>
+        <strong>Email</strong><br>
+        <a href="mailto:#">gaellerie.hermange@gmail.com</a>
+      </address>
+    </div>
+
+  </div>
+
+</section>
+
+{% endblock %}
