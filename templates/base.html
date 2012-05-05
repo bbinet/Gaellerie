@@ -65,12 +65,11 @@
     <!-- <script src="resources/jquery.js"></script> -->
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.js"></script>
     <script src="js/galleria.js"></script>
-    <script src="js/galleria.flickr.js"></script>
     <script>
     $("div.galleria").each(function(index) {
         // Load the classic theme only once
         if (index === 0) {
-            Galleria.loadTheme('js/galleria.classic.js');
+            Galleria.loadTheme('galleria-themes/classic/galleria.classic.js');
         }
         // Initialize Galleria
         $('.galleria').galleria({
