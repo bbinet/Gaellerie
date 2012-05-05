@@ -1,9 +1,14 @@
-{% set title = title | default('Gaëllerie: les photos de Gaëlle') %}
+{% set active_page = active_page | default('Présentation') %}
+{% set navbar = [
+    ('/', 'Présentation'),
+    ('/galerie/', 'Galerie'),
+    ('/faq/', 'FAQ'),
+] -%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>{{ title }}</title>
+    <title>{{ active_page }} - Gaëllerie: les photos de Gaëlle</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="">
     <meta name="author" content="">
@@ -36,9 +41,10 @@
             <span class="brand">Gaëllerie</span>
             <div class="nav-collapse">
             <ul class="nav pull-right">
-                <li class="active"><a href="#">Présentation</a></li>
-                <li><a href="#">Galerie</a></li>
-                <li><a href="#">FAQ</a></li>
+                {% for href, caption in navbar %}
+                <li{% if caption == active_page %} class="active"{% endif
+                %}><a href="{{ href|e }}">{{ caption|e }}</a></li>
+                {% endfor %}
             </ul>
             </div><!-- /.nav-collapse -->
         </div>
