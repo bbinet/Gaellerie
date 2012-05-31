@@ -73,7 +73,10 @@
         }
         // Initialize Galleria
         $('.galleria').galleria({
-            flickr: $(this).attr("id")
+            flickr: $(this).attr("id"),
+            flickrOptions: {
+                max: 500
+            }
         });
     });
     </script>
